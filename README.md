@@ -1,7 +1,11 @@
 # PhpUts #
 PHP Utilities
 
-*Clone this repository into the 'vendor' directory*
+*Clone this repository into the 'vendor' directory with the following command:*
+
+```
+git clone https://github.com/digices-llc/phputs.git
+```
 
 ###Crypt###
 

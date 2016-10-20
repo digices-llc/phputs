@@ -1,5 +1,7 @@
 <?php
 
+require_once(__DIR__.DIRECTORY_SEPARATOR.'etc'.DIRECTORY_SEPARATOR.'config.php');
+
 $lib = __DIR__.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR;
 
 $di = new DirectoryIterator($lib);

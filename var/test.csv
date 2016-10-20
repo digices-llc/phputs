@@ -1,0 +1,4 @@
+1,regular string,contains \"quoted\" string,"comma, separated, values"
+2,"quoted, string",regular string,"this one 
+has a return"
+3,normal,escaped \' single quote,normal

@@ -72,11 +72,13 @@ class PhpUtsCSV
       }
 
       // check for comma, so we can quote the string
-			if ($stp = strpos($cell, ',')) {
-				$line .= '"'.$cell.'"';
-			} else {
-				$line .= $cell;
-			}
+      if ($stp = strpos($cell, ',')) {
+         $line .= '"'.$cell.'"';
+      }
+
+      else {
+        $line .= $cell;
+      }
 
       $v++;
 
@@ -176,10 +178,10 @@ class PhpUtsCSV
               // return or newline is record delimeter
               if (strlen($value) > 0) {
                 // avoid doubled up combinations (i.e. windows formatted csv)
-								array_push($line, $value);
-								$value = '';
-								array_push($file, $line);
-								$line = array();
+                array_push($line, $value);
+                $value = '';
+                array_push($file, $line);
+                $line = array();
               }
               // else ignore
               break;
